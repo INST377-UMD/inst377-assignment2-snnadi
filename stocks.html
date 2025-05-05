@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Stocks Page</title>
+  <link rel="stylesheet" href="layout.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/annyang@2.6.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script src="script.js" defer></script>
+</head>
+
+<body id="StockPage">
+  <h1>Stocks Page</h1>
+
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <h2>Search Stock</h2>
+  <input type="text" id="stockInput" placeholder="Enter stock ticker">
+  <select id="daySelect">
+    <option value="30">30 Days</option>
+    <option value="60">60 Days</option>
+    <option value="90">90 Days</option>
+  </select>
+  <button class="button-49" onclick="getStockData()">Submit</button>
+
+  <div class="chart-container">
+    <canvas id="stockChart"></canvas>
+  </div>
+  
+  <table id="redditStocksTable"></table>
+
+  <div id="audio-controls">
+    <h3>In this web page there are options to Navigate using Audio!</h3>
+    <ul>
+      <li>Say “Hello”</li>
+      <li>Say “Lookup  AAPL”</li>
+      <li>Say “Change the color to red”</li>
+      <li>Say “Navigate to stocks/dogs/home”</li>
+
+    </ul>
+    <button onclick="annyang.start()">Start</button>
+    <button onclick="annyang.abort()">Stop</button>
+  </div>
+</body>
+</html>

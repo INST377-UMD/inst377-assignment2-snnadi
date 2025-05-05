@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="layout.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/annyang@2.6.1"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body id="HomePage">
+  <h1>Welcome to the Home Page</h1>
+
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+  <div class="button-container">
+  <button class="button-49" onclick="location.href='stocks.html'">Go to Stocks</button>
+  <button class="button-49" onclick="location.href='dogs.html'">Go to Dogs</button>
+    </div>
+    <h2>Random Quote</h2>
+  <p id="quote"> </p>
+
+
+  <div id="audio-controls">
+    <h3>In this web page there are options to Navigate using Audio!</h3>
+    <ul>
+      <li>Say “Hello”</li>
+      <li>Say “Change the color to blue”</li>
+      <li>Say “Navigate to stocks/dogs/home”</li>
+    </ul>
+    <button onclick="annyang.start()">Start</button>
+    <button onclick="annyang.abort()">Stop</button>
+  </div>
+</body>
+</html>
+
