@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Dogs Page</title>
+      
+
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+      
+
+        <script src="https://cdn.jsdelivr.net/npm/annyang@2.6.1"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      
+
+        <script src="script.js" defer></script>
+      </head>
+      
+</head>
+<body id="DogPage">
+  <h1>Dogs Page</h1>
+
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <h2>Random Dogs</h2>
+
+<div class="swiper" id="dogSlider">
+    <div class="swiper-wrapper">
+
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <h2>Breeds</h2>
+  <div id="breedButtons"></div>
+
+  <h2>Breed Info</h2>
+  <div id="breedInfo"></div>
+
+  <div id="audio-controls">
+    <h3>In this web page there are options to Navigate using Audio!</h3>
+    <ul>
+      <li>Say “Hello”</li>
+      <li>Say “Load dog breed bulldog”</li>
+      <li>Say “Change the color to red”</li>
+      <li>Say “Navigate to stocks/dogs/home”</li>
+ 
+    </ul>
+    <button onclick="annyang.start()">Start</button>
+    <button onclick="annyang.abort()">Stop</button>
+  </div>
+</body>
+</html>
